@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * main: Entry point: print size of various types on computer
+ * main - Entry point and function
+ *
+ * Description: print size of various types on computer
  *
  * Return: Always 0 (success)
  */
