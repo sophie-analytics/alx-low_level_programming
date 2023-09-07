@@ -6,7 +6,7 @@
  * Description: print size of various types on computer
  * Warnings are allowed
  *
- * return: Always 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
