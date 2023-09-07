@@ -1,11 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - Entry point: print size of various types on computer
- *
- * Description: This program prints the size of char, int, long int,
- * long long int, and float data types on the computer
- * Warnings are allowed
+ * main: Entry point: print size of various types on computer
  *
  * Return: Always 0 (success)
  */
