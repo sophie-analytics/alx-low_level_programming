@@ -4,6 +4,7 @@
  * main - Entry Point
  *
  * Description: Prints a string using the 'puts' function
+ *
  * Return: Always 0 (success)
  */
 int main(void)
