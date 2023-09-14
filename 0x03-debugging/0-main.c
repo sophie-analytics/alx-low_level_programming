@@ -2,9 +2,7 @@
 
 /**
  * main - Entry point
- *
  * Description: Determines the state of a value
- *
  * Return: Always 0 (success)
  */
 int main(void)
