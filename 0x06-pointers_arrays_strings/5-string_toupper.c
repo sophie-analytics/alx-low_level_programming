@@ -2,20 +2,20 @@
 
 /**
  * string_toupper - A function
- * @s: the string
+ * @str: the string
  * Return: The result
  */
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
-	char *ptr = s;
+	char *ptr = str;
 
-	while (*s != '\0')
+	while (*str != '\0')
 {
-	if (*s >= 'a' && *s <= 'z')
+	if (*str >= 'a' && *str <= 'z')
 {
-	s = s - 'a' + 'A';
+	str  = str - 'a' + 'A';
 }
-	s++;
+	str++;
 }
 	return (ptr);
 }
