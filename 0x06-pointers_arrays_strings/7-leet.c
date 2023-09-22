@@ -12,21 +12,14 @@ char *leet(char *str)
 	char *leet_char = "aAeEoOtTlL";
 	char *leet_replace = "4433007711";
 
-	i = 0;
-	while (*str != '\0')
+	while (*str)
 {
-	while (leet_char[i] != '\0')
+	for (i = 0; leet_char[i]; i++)
 {
 	if (*str == leet_char[i])
 {
 	*str = leet_replace[i];
-	break;
 }
-	i++;
-}
-	if (leet_char[i] == '\0')
-{
-	i = 0;
 }
 	str++;
 }
