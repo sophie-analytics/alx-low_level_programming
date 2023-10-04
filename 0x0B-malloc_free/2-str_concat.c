@@ -9,50 +9,50 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0;
-	int j;
-	char *duplicated_s1 = s1;
-	char *duplicated_s2 = s2;
+	int i, j;
 	char *concat_str;
-	char *output_str;
 
 	if (s1 == NULL && s2 == NULL)
 {
 	return (NULL);
 }
-	while (*duplicated_s1 != '\0')
+	else if (s1 == NULL && s2 != NULL)
+{
+	s1 = "";
+}
+	else if (s1 != NULL && s2 == NULL)
+{
+	s2 = "";
+}
+	i = 0;
+	while (s1[i] != '\0')
 {
 	i++;
-	duplicated_s1++;
 }
-	j = i;
-	while (*duplicated_s2 != '\0')
+	j = 0;
+	while (s2[j] != '\0')
 {
 	j++;
-	duplicated_s2++;
+	i++;
 }
-	concat_str = (char *)malloc((j + 1) * sizeof(char));
+	concat_str = (char *)malloc((i + 1) * sizeof(char));
 	if (concat_str == NULL)
 {
 	return (NULL);
 }
-	output_str = concat_str;
-
-	while (*s1 != '\0')
+	i = 0;
+	while (s1[i] != '\0')
 {
-	*output_str = *s1;
-	output_str++;
-	s1++;
+	concat_str[i] = s1[i];
+	i++;
 }
-	while (*s2 != '\0')
+	j = 0;
+	while (s2[j] != '\0')
 {
-	*output_str = *s2;
-	output_str++;
-	s2++;
+	concat_str[i] = s2[j];
+	j++;
+	i++;
 }
-	*output_str = '\0';
-
+	concat_str[i] = '\0';
 	return (concat_str);
 }
-
-	
