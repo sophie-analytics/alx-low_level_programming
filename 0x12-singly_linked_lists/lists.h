@@ -6,17 +6,19 @@
 int _putchar(char c);
 
 /**
- * struct list_t - structure of a node 
- * @str: the string it takes
- * @len: length of the string
- * @next: pointer to the next node
- */
+ *  * struct list_s - singly linked list
+ *   * @str: string - (malloc'ed string)
+ *    * @len: length of the string
+ *     * @next: points to the next node
+ *      *
+ *       * Description: singly linked list node structure
+ *        */
 
-typedef struct list_t
+ typedef struct list_s
 {
 	char *str;
-	size_t len;
-	struct list_t *next;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
 size_t print_list(const list_t *h);
