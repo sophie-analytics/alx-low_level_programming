@@ -11,15 +11,9 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int file_descriptor;
-	ssize_t write_bytes;
+	int file_descriptor, write_bytes, letters;
 
 	if (filename == NULL)
-	{
-		return (-1);
-	}
-
-	if (text_content == NULL)
 	{
 		return (-1);
 	}
@@ -31,15 +25,16 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	if (text_content)
 	{
-	write_bytes = write(file_descriptor, text_content, strlen(text_content));
-	}
+		for (letters = 0; text_content[letters]; letters++)
+			;
+	write_bytes = write(file_descriptor, text_content, letters);
 
 	if (write_bytes == -1)
 	{
 		close(file_descriptor);
 		return (-1);
 	}
-
+	}
 	close(file_descriptor);
 	return (1);
 }
