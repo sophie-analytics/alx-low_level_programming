@@ -1,0 +1,1 @@
+This documents the use of doubly linked list to solve some task problems.
