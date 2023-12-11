@@ -1,0 +1,1 @@
+This documents the use of the concept of dynamic libraries in c to create dynamic libraires and solve some problems.
