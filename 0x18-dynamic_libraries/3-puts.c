@@ -1,15 +1,11 @@
 #include "main.h"
 
 /**
- * _puts - the function the imitates puts
- * @str: the string it takes
+ * _puts - Function that imitates puts
+ * @str: The string to print
  */
 void _puts(char *str)
 {
-	while (*str != '\0')
-{
-	_putchar(*str);
-	str++;
-}
-	_putchar('\n');
+   // The function body
+   // returns nothing
 }
